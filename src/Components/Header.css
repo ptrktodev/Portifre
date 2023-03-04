@@ -1,0 +1,45 @@
+.Header {
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+.nav h2 {
+  color: rgb(255, 255, 255);
+}
+
+.nav div {
+  cursor: pointer;
+  color: var(--color-secondary);
+  transition: 0.2s ease;
+}
+.nav div:hover {
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.nav ul {
+  display: flex;
+  gap: 1rem;
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.nav ul li:hover {
+  color: white;
+}
+
+.nav div {
+  display: flex;
+  gap: 0.8rem;
+}

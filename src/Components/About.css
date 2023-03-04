@@ -1,0 +1,62 @@
+.About {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.aboutTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.aboutTitle h1 {
+  font-size: 3rem;
+}
+
+.aboutTitle .h1Gradient {
+  background: linear-gradient(to right, #ebdb05, #ff2020);
+  background-clip: text;
+  color: transparent;
+}
+
+.aboutText {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.aboutText::before {
+  content: "";
+  width: 130px;
+  height: 5px;
+  border-radius: 4px;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centraliza o pseudo-elemento */
+  position: absolute;
+  background: linear-gradient(to right, #ebdb05, #ff2020);
+}
+
+.About p {
+  font-family: var(--font-secondary);
+  width: 80%;
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--color-secondary);
+}
+
+@media (max-width: 600px) {
+  .aboutTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+  }
+}
