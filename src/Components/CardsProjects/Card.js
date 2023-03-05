@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
-import { ReactComponent as Hand } from "../../assets/handarrow.svg";
 import { motion } from "framer-motion";
+import Btn1 from "../Button1/Btn1";
 
 const Card = ({ img, name, descr, link }) => {
   return (
@@ -24,8 +24,7 @@ const Card = ({ img, name, descr, link }) => {
         <div class="author">
           {" "}
           <a href={link} target="_blank">
-            <Hand />
-            Visit
+            <Btn1 title="Visit" />
           </a>
         </div>
       </div>

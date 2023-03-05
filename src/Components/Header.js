@@ -13,21 +13,19 @@ const Header = () => {
           <Fire /> Portfire
         </h2>
 
-        <div>
-          <div className="navBox">
-            <a href="https://github.com/ptrktodev" target="_blank">
-              <Git />
-            </a>
-            <a href="https://www.instagram.com/ptrk.io/" target="_blank">
-              <Insta />
-            </a>
-            <a
-              href="https://linkedin.com/in/patrick-rodriguez-tech"
-              target="_blank"
-            >
-              <Linkedin />
-            </a>
-          </div>
+        <div className="navBox">
+          <a href="https://github.com/ptrktodev" target="_blank">
+            <Git />
+          </a>
+          <a href="https://www.instagram.com/ptrk.io/" target="_blank">
+            <Insta />
+          </a>
+          <a
+            href="https://linkedin.com/in/patrick-rodriguez-tech"
+            target="_blank"
+          >
+            <Linkedin />
+          </a>
         </div>
       </div>
     </header>

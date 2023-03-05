@@ -43,3 +43,11 @@
   display: flex;
   gap: 0.8rem;
 }
+
+.navBox a {
+  transition: 0.2s ease;
+}
+
+.navBox a:hover {
+  transform: scale(1.07);
+}

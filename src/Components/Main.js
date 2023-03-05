@@ -35,21 +35,21 @@ const Main = () => {
           <Card
             img={Cine}
             name="CineMagic"
-            descr="No universo do CineMagic você obtém informações sobre filmes e Séries."
+            descr="In the universe of CineMagic you get information about movies and series."
             link="https://cinemagic.bohr.io/"
           />
 
           <Card
             img={Picsure}
             name="PicSure"
-            descr="Nessa pequena galeria você tem acesso a milhões de imagens."
+            descr="In this small gallery you have access to millions of images."
             link="https://picsure.bohr.io/"
           />
 
           <Card
             img={Little}
             name="Little Links"
-            descr="Um projeto que contem links rápidos para que você possa me conhecer mais."
+            descr="A project that contains quick links so you can get to know me more."
             link="https://littlelinks.bohr.io/"
           />
         </div>

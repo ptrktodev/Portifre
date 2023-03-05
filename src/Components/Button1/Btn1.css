@@ -1,0 +1,35 @@
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.cta span {
+  padding-bottom: 3px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 85%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #ebdb05, #ff2020);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
