@@ -10,9 +10,9 @@ const Header = () => {
     <header className="Header">
       <div className="container nav">
         <h2>
-          <Fire /> Portfire
+          <Fire />
+          Portfire
         </h2>
-
         <div className="navBox">
           <a href="https://github.com/ptrktodev" target="_blank">
             <Git />

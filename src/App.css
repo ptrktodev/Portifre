@@ -6,6 +6,7 @@
   margin: 0;
   border: 0;
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 body {

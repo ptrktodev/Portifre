@@ -64,3 +64,11 @@
     font-size: 2.7rem;
   }
 }
+
+@media (max-width: 650px) {
+  .aboutText::before {
+    width: 120px;
+    top: 107%;
+    transform: translate(-50%, -40%); /* centraliza o pseudo-elemento */
+  }
+}

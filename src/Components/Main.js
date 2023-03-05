@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Main.css";
 import Card from "./CardsProjects/Card";
 
@@ -6,9 +6,9 @@ import Cine from "../assets/cine.png";
 import Little from "../assets/little.png";
 import Picsure from "../assets/picsure.png";
 
-import { ReactComponent as Hand } from "../assets/hand.svg";
 import { useInView } from "react-intersection-observer"; /* para fazer a animação ser acionada quando o elemento estiver visível na tela */
 import { motion } from "framer-motion";
+import Write from "./MachineWrite/Write";
 
 const Main = () => {
   const [ref, inView] = useInView({
@@ -16,6 +16,7 @@ const Main = () => {
     threshold: 0.1, // 10% visível para ativar a animação
     triggerOnce: false, // aciona a animação apenas uma vez
   });
+
   return (
     <main className="container">
       <div className="main">
@@ -27,7 +28,11 @@ const Main = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <h1>
-            Welcome <Hand />
+            <Write
+              fullText="Patrick Rodriguez"
+              secondText="teste"
+              speed="180"
+            />{" "}
           </h1>
           <h2>I'm Web Developer</h2>
         </motion.div>
