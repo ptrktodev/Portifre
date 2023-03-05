@@ -15,15 +15,18 @@ const Header = () => {
 
         <div>
           <div className="navBox">
-            <a href="https://google.com">
+            <a href="https://github.com/ptrktodev" target="_blank">
               <Git />
             </a>
-            <li>
+            <a href="https://www.instagram.com/ptrk.io/" target="_blank">
               <Insta />
-            </li>
-            <li>
+            </a>
+            <a
+              href="https://linkedin.com/in/patrick-rodriguez-tech"
+              target="_blank"
+            >
               <Linkedin />
-            </li>
+            </a>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 .card {
   width: 30%;
   height: 350px;
-  background: white;
+  background: #ffffffff;
   padding: 0.4em;
   border-radius: 6px;
 }
@@ -27,10 +27,14 @@
 
 .category {
   text-transform: uppercase;
-  font-size: 0.7em;
-  font-weight: 600;
-  color: #000000;
+  font-size: 0.7rem;
   padding: 10px 7px 0;
+}
+
+.categoryh2Gradient {
+  background: linear-gradient(to right, #ff2020 0%, #e9da07 20%, #4e4900 100%);
+  background-clip: text;
+  color: transparent;
 }
 
 .heading {
