@@ -81,3 +81,12 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 340px) {
+  .aboutTitle h1 {
+    margin-left: 0px;
+  }
+  .About p {
+    font-size: 0.9rem;
+  }
+}

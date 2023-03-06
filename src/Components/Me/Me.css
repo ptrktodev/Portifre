@@ -1,8 +1,7 @@
 .MenuApresentacao {
   color: var(--color-primary);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  justify-content: stretch;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   width: 100%;
   padding: 2rem 0rem;
@@ -10,7 +9,6 @@
 }
 
 .MenuApresentacao div {
-  max-width: 90%;
   display: flex;
   justify-content: center;
 }
@@ -45,7 +43,7 @@
     font-size: 2.3rem;
   }
   .MenuApresentacao div .p {
-    width: 40ch;
+    width: 30ch;
     font-size: 0.8rem;
   }
   .MenuApresentacao div h1 {

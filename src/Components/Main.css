@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -69,10 +70,14 @@
   .main {
     padding: 2rem 0;
   }
+  .mainMe {
+    flex-direction: column;
+  }
   .mainMe h1 {
     font-size: 2.3rem;
   }
   .mainMe .h1Gradient {
     font-size: 2.3rem;
+    margin-left: 0px;
   }
 }

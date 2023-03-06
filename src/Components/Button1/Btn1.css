@@ -12,11 +12,11 @@
   height: 2.6em;
   text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
   background: linear-gradient(to right, #ebdb05, #ff2020);
-  transition: background-image 0.5s ease;
+  transition: 0.2s ease;
 }
 
 .Button:hover {
-  transform: translateY(-0.1em);
+  transform: translateY(-0.2em);
 }
 
 .Button:active {
