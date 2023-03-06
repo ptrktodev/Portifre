@@ -4,23 +4,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   margin-bottom: 5rem;
+  padding: 2rem 0;
 }
 
 .aboutTitle {
   display: flex;
-  text-align: center;
-  align-items: center;
   justify-content: center;
-  gap: 1rem;
+  width: 100%;
 }
 
 .aboutTitle h1 {
+  margin-left: 12px;
   font-size: 3rem;
 }
 
-.aboutTitle .h1Gradient {
+.h1Gradient {
   background: linear-gradient(to right, #ebdb05, #ff2020);
   background-clip: text;
   color: transparent;
@@ -37,7 +37,7 @@
   width: 130px;
   height: 5px;
   border-radius: 4px;
-  top: 120%;
+  top: 125%;
   left: 50%;
   transform: translate(-50%, -50%); /* centraliza o pseudo-elemento */
   position: absolute;
@@ -68,7 +68,16 @@
 @media (max-width: 650px) {
   .aboutText::before {
     width: 120px;
-    top: 107%;
+    top: 113%;
     transform: translate(-50%, -40%); /* centraliza o pseudo-elemento */
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutTitle h1 {
+    font-size: 2.3rem;
+  }
+  .About p {
+    font-size: 1rem;
   }
 }

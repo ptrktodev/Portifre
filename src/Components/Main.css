@@ -4,20 +4,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0;
+  padding: 4rem 0;
   gap: 3rem;
 }
 
 .mainMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
-  text-align: center;
 }
 
-.mainMe h1 {
-  font-size: 3.8rem;
+.mainMe .h1Gradient {
   background: linear-gradient(to right, #ebdb05, #ff2020);
   background-clip: text;
   color: transparent;
+  font-size: 3rem;
+  margin-left: 12px;
+}
+
+.mainMe h1 {
+  font-size: 3rem;
+  color: var(--color-primary);
 }
 
 /* .mainMe h1::after {
@@ -46,4 +54,25 @@
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .mainMe h1 {
+    font-size: 2.7rem;
+  }
+  .mainMe .h1Gradient {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .main {
+    padding: 2rem 0;
+  }
+  .mainMe h1 {
+    font-size: 2.3rem;
+  }
+  .mainMe .h1Gradient {
+    font-size: 2.3rem;
+  }
 }

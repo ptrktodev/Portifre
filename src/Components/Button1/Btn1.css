@@ -1,35 +1,24 @@
-.cta {
-  border: none;
-  background: none;
+.Button {
+  font-size: 0.7rem;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  font-weight: bold;
   cursor: pointer;
-  padding: 5px;
-}
-
-.cta span {
-  padding-bottom: 3px;
-  letter-spacing: 2px;
-  font-size: 0.8rem;
-}
-
-.hover-underline-animation {
-  position: relative;
-  color: black;
-}
-
-.hover-underline-animation:after {
-  content: "";
-  position: absolute;
-  width: 85%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
+  will-change: box-shadow, transform;
+  padding: 0 2em;
+  border-radius: 1rem;
+  color: #fff;
+  height: 2.6em;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
   background: linear-gradient(to right, #ebdb05, #ff2020);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: background-image 0.5s ease;
 }
 
-.cta:hover .hover-underline-animation:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.Button:hover {
+  transform: translateY(-0.1em);
+}
+
+.Button:active {
+  transform: translateY(0em);
 }

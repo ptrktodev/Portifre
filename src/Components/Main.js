@@ -8,7 +8,6 @@ import Picsure from "../assets/picsure.png";
 
 import { useInView } from "react-intersection-observer"; /* para fazer a animação ser acionada quando o elemento estiver visível na tela */
 import { motion } from "framer-motion";
-import Write from "./MachineWrite/Write";
 
 const Main = () => {
   const [ref, inView] = useInView({
@@ -25,16 +24,10 @@ const Main = () => {
           ref={ref}
           initial={{ opacity: 0, y: -100 }} // valor inicial da animação
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -100 }} // valor final da animação
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          transition={{ duration: 1, ease: "easeOut" }}
         >
-          <h1>
-            <Write
-              fullText="Patrick Rodriguez"
-              secondText="teste"
-              speed="180"
-            />{" "}
-          </h1>
-          <h2>I'm Web Developer</h2>
+          <h1>See at my</h1>
+          <h1 className="h1Gradient">Projects</h1>
         </motion.div>
         <div className="Cards">
           <Card

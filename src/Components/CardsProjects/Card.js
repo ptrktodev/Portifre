@@ -9,7 +9,7 @@ const Card = ({ img, name, descr, link }) => {
       class="card"
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      transition={{ duration: 1, ease: "easeOut" }}
     >
       <div class="card-image">
         <img src={img} />
