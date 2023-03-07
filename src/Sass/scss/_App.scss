@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "./var";
 
 * {
   box-sizing: border-box;
@@ -11,10 +12,9 @@
 
 body {
   padding-top: 5rem;
-  --color-primary: #ffffff;
+  --color-primary: #fff;
   --color-secondary: #c7c7c7;
   --color-third: #00000018;
-  --font-secondary: "Poppins", sans-serif;
   background: rgb(0, 0, 0);
   font-family: "Clash Grotesk", sans-serif;
   overflow-x: hidden;
@@ -36,6 +36,11 @@ p {
   margin: 0px;
 }
 
+h1,
+h2 {
+  font-weight: bold;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -52,5 +57,5 @@ img {
   display: block;
   max-width: 100%;
   transition: 0.5s ease-in-out;
-  border-radius: 8px;
+  border-radius: $border-radius;
 }

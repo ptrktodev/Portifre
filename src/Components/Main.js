@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import "./Main.css";
-import Card from "./CardsProjects/Card";
+import "../Sass/scss/_Main.scss";
+import Card from "./Card";
 
 import Cine from "../assets/cine.png";
 import Little from "../assets/little.png";

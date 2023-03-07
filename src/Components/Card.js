@@ -1,22 +1,17 @@
 import React from "react";
-import "./Card.css";
+import "../Sass/scss/_Card.scss";
 import { motion } from "framer-motion";
-import Btn1 from "../Button1/Btn1";
+import Btn1 from "./Btn1";
 
 const Card = ({ img, name, descr, link }) => {
   return (
-    <motion.div
-      class="card"
-      initial={{ opacity: 0, x: 100 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-    >
+    <motion.div class="card">
       <div class="card-image">
         <img src={img} />
       </div>
       <div class="category">
         {" "}
-        <h2 className="categoryh2Gradient">{name}</h2>{" "}
+        <h2>{name}</h2>{" "}
       </div>
       <div class="heading">
         {" "}

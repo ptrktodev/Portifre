@@ -1,0 +1,39 @@
+@import "_var.scss";
+
+.MenuApresentacao {
+  color: $color-primary;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0rem;
+  gap: 3rem;
+  .MenuApresentacaoDiv1 {
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 65%;
+    }
+  }
+  .MenuApresentacaoDiv2 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .h1 {
+      margin-left: 10px;
+      font-size: 2.4rem;
+      @media (max-width: 400px) {
+        font-size: 1.6rem;
+      }
+    }
+    p {
+      margin-top: 0.2rem;
+      margin-left: 10px;
+      color: $color-three;
+      @media (max-width: 400px) {
+        width: 30ch;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "../Sass/scss/_Header.scss";
 import { ReactComponent as Git } from "../assets/github.svg";
 import { ReactComponent as Insta } from "../assets/instagram.svg";
 import { ReactComponent as Linkedin } from "../assets/linkedin.svg";
@@ -13,7 +13,7 @@ const Header = () => {
           <Fire />
           Portfire
         </h2>
-        <div className="navBox">
+        <div>
           <a href="https://github.com/ptrktodev" target="_blank">
             <Git />
           </a>

@@ -1,0 +1,74 @@
+@import "./var";
+
+.About {
+  color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+  padding: 2rem 0;
+  .aboutTitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    h1 {
+      margin-left: 12px;
+      font-size: $fontsize-primary;
+      @media (max-width: 600px) {
+        font-size: 2.3rem;
+      }
+      @media (max-width: 340px) {
+        margin-left: 0px;
+      }
+    }
+    .h1Gradient {
+      background: linear-gradient(to right, #ebdb05, #ff2020);
+      background-clip: text;
+      color: transparent;
+    }
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0rem;
+    }
+  }
+  .aboutText {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &::before {
+      content: "";
+      width: 130px;
+      height: 5px;
+      border-radius: 4px;
+      top: 125%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* centraliza o pseudo-elemento */
+      position: absolute;
+      background: linear-gradient(to right, #ebdb05, #ff2020);
+      @media (max-width: 650px) {
+        width: 120px;
+        top: 110%;
+        transform: translate(-50%, -40%); /* centraliza o pseudo-elemento */
+      }
+    }
+    p {
+      font-family: $font-secondary;
+      width: 80%;
+      text-align: center;
+      font-size: 1.3rem;
+      color: $color-three;
+      @media (max-width: 400px) {
+        font-size: 1rem;
+      }
+      @media (max-width: 340px) {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "../Sass/scss/_About.scss";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer"; /* para fazer a animação ser acionada quando o elemento estiver visível na tela */
 

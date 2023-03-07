@@ -1,0 +1,55 @@
+@import "_var.scss";
+
+.main {
+  display: flex;
+  color: $color-primary;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  gap: 3rem;
+  @media (max-width: 400px) {
+    padding: 2rem 0;
+  }
+  .mainMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    @media (max-width: 400px) {
+      flex-direction: column;
+    }
+    h1 {
+      font-size: $fontsize-primary;
+      color: $color-primary;
+      @media (max-width: 600px) {
+        font-size: 2.7rem;
+      }
+      @media (max-width: 400px) {
+        font-size: 2.3rem;
+      }
+    }
+    .h1Gradient {
+      background: linear-gradient(to right, #ebdb05, #ff2020);
+      background-clip: text;
+      color: transparent;
+      font-size: $fontsize-primary;
+      margin-left: 12px;
+      @media (max-width: 600px) {
+        font-size: 2.7rem;
+      }
+      @media (max-width: 400px) {
+        font-size: 2.3rem;
+        margin-left: 0px;
+      }
+    }
+  }
+  .Cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,9 @@
+@import "./var";
+
+.h1Gradient {
+  background: linear-gradient(to right, #ebdb05, #ff2020);
+  background-clip: text;
+  color: transparent;
+  font-size: $fontsize-primary;
+  margin-left: 10px;
+}

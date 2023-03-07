@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../Sass/scss/_Write.scss";
 
 const MachineWriting = ({ fullText, speed }) => {
   const [text, setText] = useState("");
@@ -19,7 +20,7 @@ const MachineWriting = ({ fullText, speed }) => {
     updateText();
   }, []);
 
-  return <p>{text}</p>;
+  return <h1 className="h1Gradient">{text}</h1>;
 };
 
 export default MachineWriting;

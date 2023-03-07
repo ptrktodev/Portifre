@@ -1,0 +1,20 @@
+@import "./var";
+
+.Button {
+  font-size: 0.7rem;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, hsl(56, 96%, 47%), hsl(0, 100%, 56%));
+  transition: 0.2s ease;
+  letter-spacing: 1px;
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
